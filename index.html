@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <style>
+        .div1 {
+            border: 2px solid red;
+            height: 150px;
+            width: 150px;
+        }
+        @media screen and (min-width:0px) and (max-width:320px) {
+            .div1 {
+                background-color: green;
+                background-image: url( "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202409/pawan-kalyan-022901695-16x9_0.jpg?VersionId=f3hJHqIEWaquGseKHd3crd3z4JkhR_VW&size=690:388");
+                background-size: cover;
+
+            }
+        }
+        @media screen and (min-width:321px) and (max-width:375px) {
+           .div1 {
+            background-color:aqua;
+            background-image: url("./pk\ pic\ -\ Copy.jpg");
+            background-size: cover;
+          
+           }            
+        }
+        @media screen and (min-width:376px) and (max-width:768px) {
+
+            .div1 {
+                background-color: bisque;
+                background-image: url("./free-images.avif");
+                background-size: cover;
+          
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+</body>
+</html>
