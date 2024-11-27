@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index2.css" />
+    <style>
+        .div1{
+            width: 205px;
+        }
+      img {
+        height: 200px;
+        width: 200px;
+      }
+      /* @media screen and (min-width: 0px) and(max-width:425px) {
+        .pk,.og{
+            display: none;
+        }
+      }
+      @media screen and (min-width:426px) and (max-width:768px) {
+        .og,.dp{
+
+        }
+        
+      } */
+       @media screen and (orientation:landscape) {
+        body{
+            background-color: aquamarine;
+        }
+        .div1{
+            border: 5px solid red;
+            padding: 25px;
+            background-color: aqua;
+        }
+        @media screen and (orientation:potrait) {
+            body{
+                background-color: pink;
+            }
+            .div1{
+                border: 5px solid green;
+                padding: 25px;
+                background-color: chartreuse;
+            }
+        }
+       }
+       .div1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+       }
+       .p{
+        background-color: white;
+       }
+       @media screen and (min-width:0px) and (max-width:475px) {
+        .div1{
+            display: flex;
+            justify-content: center;
+        }
+       }
+       .d1{
+        border: 5px solid black;
+       }
+    </style>
+  </head>
+  <body>
+    <div class="div1">
+     <div class="d1">
+            <div><img src="./pk pic - Copy.jpg" alt="" /></div>
+            <div style="height: 50px;overflow-y: scroll;background-color: antiquewhite;"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aliquid sequi repellat blanditiis repellendus nobis impedit, quibusdam voluptates quam iste odio. Numquam tenetur repellendus laborum totam consequuntur minima, soluta fugit?</p></div>
+          <div class="p"><p>pawankalyan</p></div>
+     </div>
+   <div class="d1">
+    <div><img src="./download.jpeg" alt="" /></div>
+        <div style="height: 50px;overflow-y: scroll;background-color: antiquewhite;"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aliquid sequi repellat blanditiis repellendus nobis impedit, quibusdam voluptates quam iste odio. Numquam tenetur repellendus laborum totam consequuntur minima, soluta fugit?</p></div>
+        <div class="p"><p>og</p></div>
+    </div>
+   <div class="d1">
+        <div><img src="./download.jpeg" alt="" /></div>
+        <div style="height: 50px;overflow-y: scroll;background-color: antiquewhite;"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aliquid sequi repellat blanditiis repellendus nobis impedit, quibusdam voluptates quam iste odio. Numquam tenetur repellendus laborum totam consequuntur minima, soluta fugit?</p></div>
+        <div class="p"><p>pk</p></div>
+ </div>
+  </body>
+</html>
